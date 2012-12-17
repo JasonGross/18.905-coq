@@ -10,6 +10,9 @@ Section preimage.
 
   Definition preimage (X : Ensemble B) : Ensemble A
     := (fun a => (f a) ∈ X).
+
+  Definition image (X : Ensemble A) : Ensemble B
+    := (fun b => exists a, b = f a).
 End preimage.
 
 Notation "f ⁻¹" := (preimage f).
