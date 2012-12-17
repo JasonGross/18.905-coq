@@ -14,3 +14,8 @@ Section sets.
   Definition intersection : Ensemble X :=
     (fun x => forall S, S ∈ C -> x ∈ S).
 End sets.
+
+Notation "⋃_( α ) X" := (@union _ (fun S => exists α, S = X)).
+Notation "⋂_( α ) X" := (@intersection _ (fun S => exists α, S = X)).
+Notation "A ∪ B" := (@union _ (fun S => S = A \/ S = B)).
+Notation "A ∩ B" := (@union _ (fun S => S = A \/ S = B)).
