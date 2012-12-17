@@ -1,5 +1,6 @@
 MODULES    := Common \
 	Notations \
+	Sets \
 	Functions #\
 	Group \
 	Definitions
