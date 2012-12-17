@@ -1,4 +1,6 @@
-MODULES    := Common #\
+MODULES    := Common \
+	Notations \
+	Functions #\
 	Group \
 	Definitions
 
